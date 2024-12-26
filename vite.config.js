@@ -8,7 +8,7 @@ export default defineConfig({
     replace({
       preventAssignment: true,
       values: {
-        'import.meta.env.VITE_APPWRITE_ENDPOINT': JSON.stringify(
+        'import.meta.env.APPWRITE_ENDPOINT': JSON.stringify(
           process.env.VITE_APPWRITE_ENDPOINT
         ),
       },
@@ -16,7 +16,7 @@ export default defineConfig({
     replace({
       preventAssignment: true,
       values: {
-        'import.meta.env.VITE_APPWRITE_PROJECT_ID': JSON.stringify(
+        'import.meta.env.APPWRITE_PROJECT_ID': JSON.stringify(
           process.env.VITE_APPWRITE_PROJECT_ID
         ),
       },
