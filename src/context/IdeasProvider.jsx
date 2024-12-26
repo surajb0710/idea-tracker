@@ -4,8 +4,8 @@ import { ID, Query } from 'appwrite';
 import PropTypes from 'prop-types';
 import IdeasContext from './IdeasContext';
 
-export const IDEAS_DATABASE_ID = '676c0736001bce4b81ec'; // Replace with your database ID
-export const IDEAS_COLLECTION_ID = '676c0751002a900a03da'; // Replace with your collection ID
+export const IDEAS_DATABASE_ID = import.meta.env.VITE_DATABASE_ID; // Replace with your database ID
+export const IDEAS_COLLECTION_ID = import.meta.env.VITE_COLLECTION_ID; // Replace with your collection ID
 
 export function IdeasProvider({ children }) {
   const [ideas, setIdeas] = useState([]);
